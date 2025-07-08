@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QuiGames - Game List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #1a73e8;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        .game-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+        .game-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+        }
+        .game-card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+        }
+        .game-info {
+            padding: 1rem;
+        }
+        .game-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin: 0 0 0.5rem;
+        }
+        .game-link {
+            color: #1a73e8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>QuiGames - Our Games</h1>
+    </header>
+    <section class="game-list">
+        <div class="game-card">
+            <img src="https://play-lh.googleusercontent.com/S-dmyKmH3ko5J-nwTq-HJgUoL1NncyPvF-fymFk8jZbZTW2rPaX13zJuMi1KQ-5clXA=w480-h960-rw" alt="Slot Game">
+            <div class="game-info">
+                <div class="game-title">Slot: Casino Style</div>
+                <a class="game-link" href="https://play.google.com/store/apps/details?id=com.quigames.slot" target="_blank">View on Play Store</a>
+            </div>
+        </div>
+        <!-- Add more games below -->
+        <!-- Example template for additional games -->
+        <!--
+        <div class="game-card">
+            <img src="[GAME_IMAGE_URL]" alt="Game Name">
+            <div class="game-info">
+                <div class="game-title">[Game Title]</div>
+                <a class="game-link" href="[PLAYSTORE_URL]" target="_blank">View on Play Store</a>
+            </div>
+        </div>
+        -->
+    </section>
+</body>
+</html>
